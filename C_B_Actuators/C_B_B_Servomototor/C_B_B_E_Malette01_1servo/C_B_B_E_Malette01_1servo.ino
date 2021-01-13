@@ -1,21 +1,16 @@
-/* Sweep
- by BARRAGAN <http://barraganstudio.com>
- This example code is in the public domain.
-
- modified 8 Nov 2013
- by Scott Fitzgerald
- http://www.arduino.cc/en/Tutorial/Sweep
-*/
 
 #include <Servo.h>
 
-Servo myservo;  // créer un objet servo pour contrôler un servo moteur
-// douze objets servo peuvent être créés sur la plupart des carte Arduino
+Servo myservo01;  // créer un objet servo pour contrôler un 1er servo moteur
+Servo myservo02;  // créer un objet servo pour contrôler un 2e servo moteur
+Servo myservo03;  // créer un objet servo pour contrôler un 3e servo moteur
 
 int pos = 0;    // variable pour mémoriser la position du moteur
 
 void setup() {
   myservo.attach(3);  // fixe le servo sur la broche 3 à l'objet servo
+   myservo.attach(5);  // fixe le servo sur la broche 3 à l'objet servo
+    myservo.attach(6);  // fixe le servo sur la broche 3 à l'objet servo
 }
 
 void loop() {
